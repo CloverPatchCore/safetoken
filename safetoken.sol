@@ -170,7 +170,7 @@ abstract contract Tokenomics {
      * If you keep this tip enabled, let me know in Discord: https://discord.gg/zn86MDCQcM
      * and you'll be added to the partners section to promote your token. 
      */
-    address internal tipToTheDev = 0x;
+    address internal tipToTheDev = 0xA706c9535A9BFa629c4D84b0eB65C00287689dAb;
 
     enum FeeType { Antiwhale, Burn, Liquidity, Rfi, External, ExternalToETH }
     struct Fee {
