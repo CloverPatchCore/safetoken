@@ -71,15 +71,15 @@ abstract contract Tokenomics {
     
     // --------------------- Token Settings ------------------- //
 
-    string internal constant NAME = "SafeToken.V1Beta";
-    string internal constant SYMBOL = "STKN.V1Beta";
+    string internal constant NAME = "Bouji.V1Beta";
+    string internal constant SYMBOL = "BOUJI.V1Beta";
     
     uint16 internal constant FEES_DIVISOR = 10**3;
-    uint8 internal constant DECIMALS = 6;
+    uint8 internal constant DECIMALS = 8;
     uint256 internal constant ZEROES = 10**DECIMALS;
     
     uint256 private constant MAX = ~uint256(0);
-    uint256 internal constant TOTAL_SUPPLY = 299792458 * ZEROES;
+    uint256 internal constant TOTAL_SUPPLY = 222222222 * ZEROES;
     uint256 internal _reflectedSupply = (MAX - (MAX % TOTAL_SUPPLY));
 
     /**
@@ -161,7 +161,7 @@ abstract contract Tokenomics {
      * 0x0000000000000000000000000000001054571817 (reduced Planck's constant)
      * 0x1414213562373095048801688724209698078569 (sqrt(2))
      */
-    address internal burnAddress = 0x0000000000000000000000000000000299792458;
+    address internal burnAddress = 0x0000000000000000000000000000000222222222;
 
     /**
      * @dev You can disable this but if you feel generous I'd appreciate the 0.1%
@@ -170,7 +170,7 @@ abstract contract Tokenomics {
      * If you keep this tip enabled, let me know in Discord: https://discord.gg/zn86MDCQcM
      * and you'll be added to the partners section to promote your token. 
      */
-    address internal tipToTheDev = 0x2d67D0A35192EB8cE9DF4988686553360A6E424f;
+    address internal tipToTheDev = 0x;
 
     enum FeeType { Antiwhale, Burn, Liquidity, Rfi, External, ExternalToETH }
     struct Fee {
